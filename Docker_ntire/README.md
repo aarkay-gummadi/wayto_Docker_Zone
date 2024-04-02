@@ -234,31 +234,31 @@ docker build -t abhishekf5/my-first-docker-image:latest .
 
 * Output of the above command
 ```
-    Sending build context to Docker daemon  992.8kB
-    Step 1/6 : FROM ubuntu:latest
-    latest: Pulling from library/ubuntu
-    677076032cca: Pull complete
-    Digest: sha256:9a0bdde4188b896a372804be2384015e90e3f84906b750c1a53539b585fbbe7f
-    Status: Downloaded newer image for ubuntu:latest
-     ---> 58db3edaf2be
-    Step 2/6 : WORKDIR /app
-     ---> Running in 630f5e4db7d3
-    Removing intermediate container 630f5e4db7d3
-     ---> 6b1d9f654263
-    Step 3/6 : COPY . /app
-     ---> 984edffabc23
-    Step 4/6 : RUN apt-get update && apt-get install -y python3 python3-pip
-     ---> Running in a558acdc9b03
-    Step 5/6 : ENV NAME World
-     ---> Running in 733207001f2e
-    Removing intermediate container 733207001f2e
-     ---> 94128cf6be21
-    Step 6/6 : CMD ["python3", "app.py"]
-     ---> Running in 5d60ad3a59ff
-    Removing intermediate container 5d60ad3a59ff
-     ---> 960d37536dcd
-    Successfully built 960d37536dcd
-    Successfully tagged abhishekf5/my-first-docker-image:latest
+Sending build context to Docker daemon  992.8kB
+Step 1/6 : FROM ubuntu:latest
+latest: Pulling from library/ubuntu
+677076032cca: Pull complete
+Digest: sha256:9a0bdde4188b896a372804be2384015e90e3f84906b750c1a53539b585fbbe7f
+Status: Downloaded newer image for ubuntu:latest
+ ---> 58db3edaf2be
+Step 2/6 : WORKDIR /app
+ ---> Running in 630f5e4db7d3
+Removing intermediate container 630f5e4db7d3
+ ---> 6b1d9f654263
+Step 3/6 : COPY . /app
+ ---> 984edffabc23
+Step 4/6 : RUN apt-get update && apt-get install -y python3 python3-pip
+ ---> Running in a558acdc9b03
+Step 5/6 : ENV NAME World
+ ---> Running in 733207001f2e
+Removing intermediate container 733207001f2e
+ ---> 94128cf6be21
+Step 6/6 : CMD ["python3", "app.py"]
+ ---> Running in 5d60ad3a59ff
+Removing intermediate container 5d60ad3a59ff
+ ---> 960d37536dcd
+Successfully built 960d37536dcd
+Successfully tagged abhishekf5/my-first-docker-image:latest
 ```
 
 * Verify Docker Image is created
